@@ -26,6 +26,7 @@ span {
     display: flex;
     align-items: center;
     gap: 20px;
+    cursor: pointer;
 }
 .nav-logo img {
     width: 86px;
@@ -44,6 +45,9 @@ nav li {
     margin-right: 32px;
     font-size: 18px;
     
+}
+nav li a:hover {
+    color: #FF42A5;
 }
 nav li a {
     text-decoration: none;
@@ -109,6 +113,9 @@ margin-right: 8px;
     font-size: 20px;
     margin-top: 15px;
 }
+.btn:hover {
+    cursor: pointer;
+}
 .btn1 {
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
 }
@@ -156,7 +163,6 @@ margin-right: 8px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    
     gap: 10px;
 }
 .videos {
@@ -165,11 +171,46 @@ margin-right: 8px;
     align-items: center;
 }
 
+.video-hover {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FF42A5;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer; 
+    transition: opacity 0.3s ease;
+  }
+  .effect i {
+    font-size: 48px;
+    color: white;
+  }
+  .video-hover:hover {
+    border: 5px solid #FF42A5;
+    border-radius: 16px;
+  }
+  .video-hover:hover .effect {
+    opacity: 1;
+  }
 
 
 /* noinstall section style  */
 
-.noinstall-container {
+.noinstall-container, .playgames-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -342,7 +383,10 @@ footer p{
     .video-container {
         grid-template-columns: repeat(1, 1fr);
         padding: 20px;
+        
     }
+
+    
 
 
     /* noinstall section responsive */
@@ -437,6 +481,8 @@ footer p{
         padding: 20px;
     }
 
+    
+
     /* noinstall section responsive  */
     .noinstall-container {
         flex-direction: column;
@@ -469,7 +515,7 @@ footer p{
     /* footer section responsive */
 
 
-    /* .footer-nav ul {
+    .footer-nav ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
@@ -480,7 +526,7 @@ footer p{
     .policy-container ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    } */
+    }
 
 }
 
@@ -518,9 +564,10 @@ footer p{
 
     /* online games section responsive */
     .video-container {
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1f);
+        
+        
     }
 
     /* noinstall section responsive  */
