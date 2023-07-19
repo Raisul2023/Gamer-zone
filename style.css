@@ -175,7 +175,7 @@ margin-right: 8px;
     align-items: center;
     padding: 0 240px;
     background: #FFF;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 .noinstall-image > img {
     width: 634px;
@@ -194,6 +194,92 @@ margin-right: 8px;
 }
 
 
+/* games menu section style  */
+.games-btn {
+    border-radius: 50px;
+    background: #FFF;
+    border: 1px solid transparent;
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.games-btn:hover {
+    color: #FF42A5;
+    border: 2px solid #FF42A5;
+}
+.games-btn img {
+    width: 60px;
+    height: 60px;
+}
+.games-container {
+    padding: 0 240px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* footer design style */
+
+footer {
+    background: #0B0223;
+    color: white;
+    margin-top: 80px;
+    padding: 100px;
+}
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-nav {
+    margin: 60px 0;
+}
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    
+}
+.footer-nav li {
+    list-style: none;
+   
+}
+.footer-nav li a {
+    text-decoration: none;
+    color: white;
+}
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+.policy-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.policy-container li {
+    list-style: none;
+}
+.policy-container li a {
+    text-decoration: none;
+    color: white;
+}
+footer p{
+    text-align: center;
+    margin-top: 50px;
+}
 
 
 /* responsive for mobile-l size display */
@@ -232,12 +318,14 @@ margin-right: 8px;
     }
 
     /* gamer section responsive */
+    
 
     .gamer-container {
         flex-direction: column;
         gap: 50px;
         padding: 10px;
     }
+   
     .gamer-content {
     text-align: center;
     }
@@ -257,13 +345,14 @@ margin-right: 8px;
     }
 
 
-    /* Games menu section responsive */
+    /* noinstall section responsive */
 
 
     .noinstall-container {
         flex-direction: column;
         padding: 10px;
         gap: 10px;
+        margin-bottom: 80px;
     }
     .noinstall-image > img {
         width: 320px;
@@ -274,6 +363,39 @@ margin-right: 8px;
     .noinstall-content {
         text-align: center;
     }
+
+
+    /* games menu section responsive  */
+
+    .games-container {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .games-btn img {
+        width: 48px;
+        height: 48X;
+    }
+    .games-btn {
+        font-size: 14px;
+        padding: 3px;
+    }
+
+    /* footer section responsive */
+
+    .footer-nav ul {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .icon-container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .policy-container ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
 }
 
 
@@ -321,6 +443,7 @@ margin-right: 8px;
         padding: 10px;
         gap: 10px;
         margin-left: 30px;
+        margin-bottom: 80px;
     }
     .noinstall-image > img {
         width: 500px;
@@ -331,6 +454,33 @@ margin-right: 8px;
     .noinstall-content {
         text-align: center;
     }
+
+
+    /* games menu section responsive  */
+
+    .games-container {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+
+    /* footer section responsive */
+
+
+    /* .footer-nav ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .icon-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .policy-container ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } */
 
 }
 
@@ -379,6 +529,7 @@ margin-right: 8px;
         padding: 10px;
         gap: 10px;
         margin-left: 30px;
+        margin-bottom: 150px;
     }
     .noinstall-image > img {
         width: 700px;
@@ -388,5 +539,11 @@ margin-right: 8px;
     }
     .noinstall-content {
         text-align: center;
+    }
+
+    /* games menu section responsive  */
+
+    .games-container {
+        padding: 10px;
     }
 }
