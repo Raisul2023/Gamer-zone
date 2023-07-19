@@ -77,7 +77,7 @@ nav li a {
     width: 710px;
     
 }
-.banner-content h2 {
+.title {
     color: #0B0223;
     font-size: 48px;
     font-weight: 600;
@@ -146,6 +146,52 @@ margin-right: 8px;
     font-size: 24px;
 }
 
+/* online games section style */
+.online-games {
+    text-align: center;
+    margin-top: 80px;
+}
+.video-container {
+    padding: 0 240px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    
+    gap: 10px;
+}
+.videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* noinstall section style  */
+
+.noinstall-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 240px;
+    background: #FFF;
+    margin-bottom: 100px;
+}
+.noinstall-image > img {
+    width: 634px;
+}
+.noinstall-content {
+    text-align: right;
+}
+.noinstall-image {
+    position: relative;
+}
+.noinstall-image .mini-img {
+    position: absolute;
+    top: 70%;
+    right: 75%;
+
+}
 
 
 
@@ -156,9 +202,7 @@ margin-right: 8px;
     nav {
         flex-direction: column;
         padding: 5px;
-        gap: 15px;
-       
-        
+        gap: 15px;  
     }
     nav ul {
         flex-direction: column;
@@ -200,7 +244,39 @@ margin-right: 8px;
     .gamer-pic img {
         width: 320px;
     }
+
+    /* online games section responsive */
+
+    .online-games{
+        padding: 5px;
+    }
+
+    .video-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+
+
+    /* Games menu section responsive */
+
+
+    .noinstall-container {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+    .noinstall-image > img {
+        width: 320px;
+    }
+    .noinstall-image .mini-img > img{
+        width: 120px;
+    }
+    .noinstall-content {
+        text-align: center;
+    }
 }
+
+
 
 /* responsive for Tablet */
 
@@ -233,7 +309,32 @@ margin-right: 8px;
         width: 520px;
     }
 
+    /* online games section responsive */
+    .video-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+    /* noinstall section responsive  */
+    .noinstall-container {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        margin-left: 30px;
+    }
+    .noinstall-image > img {
+        width: 500px;
+    }
+    .noinstall-image .mini-img > img{
+        width: 180px;
+    }
+    .noinstall-content {
+        text-align: center;
+    }
+
 }
+
+
 
 /* for laptop responsive */
 @media screen and (min-width:960px) and (max-width:1400px) {
@@ -263,5 +364,29 @@ margin-right: 8px;
     }
     .gamer-pic img {
         width: 868px;
+    }
+
+    /* online games section responsive */
+    .video-container {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        padding: 20px;
+    }
+
+    /* noinstall section responsive  */
+    .noinstall-container {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        margin-left: 30px;
+    }
+    .noinstall-image > img {
+        width: 700px;
+    }
+    .noinstall-image .mini-img > img{
+        width: 300px;
+    }
+    .noinstall-content {
+        text-align: center;
     }
 }
